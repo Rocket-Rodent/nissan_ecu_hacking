@@ -75,8 +75,12 @@
                                 |_____|
                                 these bits follow the above pattern starting from here until ff 86
 
-    0x0000023d  X3 00 00 00 00 ea 09 6f     X being either: 0, 2, 4, 6      Some sort of counter by evens?
-
+    0x0000023d  X3 00 00 00 00 ea 09 6f     X being either: 0, 2, 4, 6      Some sort of counter by evens? (CLUSTER INDICATOR) 
+                          |__|
+                           Tach - first bit is the high bit
+                 |_ - Internal counter - Has something to do with traction control         
+                                      |_ Coolant gauge
+                                      
     0x00000251  10 01 00 01 00 2f 13 37
                               |________|
                               NOTE: the following combinations are not in order of time sent, but rather numerical order to demonstrate range of possibilities
